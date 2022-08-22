@@ -8,4 +8,4 @@
 # - The -s option for aria2 is downloads a file using N connections. 
 # - The -j option for aria2 specifies the number of parallel downloads.
 
-youtube-dl "https://www.youtube.com/playlist?list=PLd8gNAxPUcJy-G84fTsMQcDsCQDi8g5B9" --download-archive "~/Desktop/youtube-dl/youtube-dl-archive.txt"  -o "~/Desktop/youtube-dl/%(title)s-%(id)s.%(ext)s" -f "bestvideo[height<=1080]+bestaudio/best[height<=1080]" --external-downloader aria2c --external-downloader-args "-x 16 -j 3 -s 16 -k 1M"
+youtube-dl "https://www.youtube.com/playlist?list=PLd8gNAxPUcJwjbL1wNigG9wI0SOthmdJB" --download-archive "~/Desktop/youtube-dl/youtube-dl-archive.txt"  -o "~/Desktop/youtube-dl/%(title)s-%(id)s.%(ext)s" --external-downloader aria2c --external-downloader-args "-x 16 -j 3 -s 16 -k 3M"
